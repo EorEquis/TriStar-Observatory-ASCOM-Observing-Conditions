@@ -319,9 +319,7 @@ namespace ASCOM.TSOObsCon.ObservingConditions
         {
             get
             {
-                Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-                // TODO customise this driver description if required
-                string driverInfo = $"{version.Major}.{version.Minor}.{version.Revision}.{version.Build}";
+                string driverInfo = "Data from " + URL;
                 LogMessage("DriverInfo Get", driverInfo);
                 return driverInfo;
             }
@@ -551,19 +549,20 @@ namespace ASCOM.TSOObsCon.ObservingConditions
                 // A completely wild guess at lightsensor -> lux conversions, based on nothing more than a value of 673 in direct sunlight
                 List<(int, int, double)> luxRanges = new List<(int, int, double)>
                 {
-                    (0, 1, .0001),
-                    (2, 10, .002),
-                    (11, 30, 1.0),
-                    (31, 50, 3.5),
-                    (51, 200, 50),
-                    (201, 300, 100),
-                    (301, 450, 400),
-                    (450, 650, 1000),
-                    (651, 1024, 32000.00)
+                    (1024, 1021, .0001),
+                    (1020, 1001, .002),
+                    (1000, 981, 1.0),
+                    (980, 951, 3.5),
+                    (950, 901, 50),
+                    (770, 751, 100),
+                    (750, 746, 400),
+                    (745, 721, 600),
+                    (720, 651, 1000),
+                    (650, 0, 32000.00)
                 };
                 foreach (var range in luxRanges)
                 {
-                    if (wx.LightSen >= range.Item1 && wx.LightSen < range.Item2)
+                    if (wx.LightSen <= range.Item1 && wx.LightSen > range.Item2)
                     {
                         value = range.Item3;
                         break;
