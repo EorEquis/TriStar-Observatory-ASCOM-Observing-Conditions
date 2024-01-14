@@ -42,8 +42,8 @@ namespace ASCOM.TSOObsCon.ObservingConditions
     /// </summary>
     [ComVisible(true)]
     [Guid("ffb13424-795b-4bda-9379-597aa5cc990a")]
-    [ProgId("ASCOM.TSOObsCon.ObservingConditions")]
-    [ServedClassName("ASCOM ObservingConditions Driver for TSOObsCon")] // Driver description that appears in the Chooser, customise as required
+    [ProgId("ASCOM.TSO.ObservingConditions")]
+    [ServedClassName("TriStar Observatory Observing Conditions Driver")] // Driver description that appears in the Chooser, customise as required
     [ClassInterface(ClassInterfaceType.None)]
     public class ObservingConditions : ReferenceCountedObjectBase, IObservingConditions, IDisposable
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriStar Observing Conditions V2", "TriStar Observing Conditions V2.csproj", "{C708E487-E3A9-4073-A545-294B88674225}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriStar Observatory ASCOM Observing Conditions V2", "TriStar Observatory ASCOM Observing Conditions V2.csproj", "{C708E487-E3A9-4073-A545-294B88674225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
