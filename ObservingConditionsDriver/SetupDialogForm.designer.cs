@@ -70,7 +70,7 @@ namespace ASCOM.TSOObsCon.ObservingConditions
             this.labelVer.Name = "labelVer";
             this.labelVer.Size = new System.Drawing.Size(123, 31);
             this.labelVer.TabIndex = 2;
-            this.labelVer.Text = "Construct your driver\'s setup dialog here.";
+            this.labelVer.Text = "Replaced at run time";
             // 
             // picASCOM
             // 
