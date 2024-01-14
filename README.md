@@ -1,4 +1,4 @@
-# TriStar Observing Conditions
+# TriStar Observatory ASCOM Observing Conditions
 
 An ASCOM observing conditions driver.
 
