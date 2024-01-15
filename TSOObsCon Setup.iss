@@ -4,9 +4,9 @@
 ;
 [Setup]
 AppID={{173ed9f3-c529-419c-ae28-cd96ef79aa05}
-AppName=TriStar Observatory ASCOM Observing Conditions Driver
-AppVerName=TriStar Observatory ASCOM Observing Conditions Driver 2.0.1.1
-AppVersion=2.0.1.1
+AppName=TriStar Observatory ASCOM Observing Conditions Driver        
+AppVerName=TriStar Observatory ASCOM Observing Conditions Driver 2.0.2.1
+AppVersion=2.0.2.1
 AppPublisher=EoEquis <eeyore@stuffupthere.com>
 AppPublisherURL=mailto:eeyore@stuffupthere.com
 AppSupportURL=https://ascomtalk.groups.io/g/Help
@@ -17,7 +17,7 @@ DefaultDirName="{cf}\ASCOM\ObservingConditions"
 DisableDirPage=yes
 DisableProgramGroupPage=yes
 OutputDir="."
-OutputBaseFilename="TriStar_Observatory_ObservingConditions_ASCOM_Setup-2.0.1.1"
+OutputBaseFilename="TriStar_Observatory_ObservingConditions_ASCOM_Setup-2.0.2.1"
 Compression=lzma
 SolidCompression=yes
 ; Put there by Platform if Driver Installer Support selected

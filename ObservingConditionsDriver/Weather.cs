@@ -1,13 +1,13 @@
 ﻿using System;
 using ASCOM.Utilities;
 using Newtonsoft.Json;
-using Microsoft.VisualBasic;
 
 namespace ASCOM.LocalServer
 {
     class Weather
     {
         public string LastWrite { get; set; }
+        public long LastWrite_timestamp { get; set; }
         public double Temp { get; set; }
         public double Hum { get; set; }
         public double DewPoint { get; set; }
@@ -46,6 +46,7 @@ namespace ASCOM.LocalServer
                 logger.LogMessage("checkWeather", "Read JSON at " + DateTime.Now.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") + " UTC");
                 logger.LogMessage("checkWeather", "LastWrite at " + Convert.ToDateTime(updatedWeather.LastWrite).ToString("yyyy-MM-dd HH:mm:ss") + " UTC");
                 this.LastWrite = updatedWeather.LastWrite;
+                this.LastWrite_timestamp = updatedWeather.LastWrite_timestamp;
                 this.Temp = updatedWeather.Temp;
                 this.Hum = updatedWeather.Hum;
                 this.Pres = updatedWeather.Pres;
